@@ -1,0 +1,3 @@
+Pon aqui tus fotos (jpg/png/webp).
+Luego en src/data/barberData.js, en el bloque FOTOS, escribe por ejemplo:
+  facialExpress: '/img/facial-express.jpg',
