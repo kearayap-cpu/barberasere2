@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Oswald:wght@500;700&display=swap');
+
+:root {
+  --bg-main: #0c0c0e;
+  --bg-card: #151518;
+  --bg-nav: #08080a;
+  --gold-accent: #c5a059;
+  --gold-hover: #e0b86c;
+  --text-main: #f0f0f2;
+  --text-muted: #8e8e93;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-gold: rgba(197, 160, 89, 0.3);
+}
+
+/* Tipografía e Identidad Base */
+body {
+  background-color: var(--bg-main) !important;
+  color: var(--text-main) !important;
+  font-family: 'Montserrat', sans-serif !important;
+  letter-spacing: 0.2px;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: 'Oswald', sans-serif !important;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.tracking-wider {
+  letter-spacing: 2px;
+}
+
+/* Colores Sobrescritos */
+.bg-dark, .bg-black {
+  background-color: var(--bg-main) !important;
+}
+
+.text-warning, .text-accent {
+  color: var(--gold-accent) !important;
+}
+
+/* Navbar Estilo FreshCut */
+.navbar {
+  background-color: var(--bg-nav) !important;
+  border-bottom: 1px solid var(--border-subtle) !important;
+  padding: 0.9rem 0;
+}
+
+.nav-link {
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 0.9rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #d0d0d5 !important;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--gold-accent) !important;
+}
+
+/* Botones Premium */
+.btn-warning, .btn-accent {
+  background-color: var(--gold-accent) !important;
+  border-color: var(--gold-accent) !important;
+  color: #0c0c0e !important;
+  font-family: 'Oswald', sans-serif !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 0.6rem 1.4rem;
+  border-radius: 4px;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-warning:hover {
+  background-color: var(--gold-hover) !important;
+  border-color: var(--gold-hover) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(197, 160, 89, 0.25);
+}
+
+.btn-outline-warning, .btn-outline-light {
+  font-family: 'Oswald', sans-serif !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  border-color: var(--border-gold) !important;
+  color: var(--gold-accent) !important;
+}
+
+.btn-outline-warning:hover {
+  background-color: var(--gold-accent) !important;
+  color: #0c0c0e !important;
+}
+
+/* Tarjetas de Servicios y Productos */
+.card {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-subtle) !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-gold) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+}
+
+.card-img-top {
+  height: 230px;
+  object-fit: cover;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  filter: brightness(1.05);
+  transform: scale(1.03);
+}
+
+/* Badge de Lujo */
+.badge-gold {
+  background-color: var(--gold-accent);
+  color: #0c0c0e;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1.5px;
+  padding: 0.5em 1em;
+  font-weight: 700;
+  border-radius: 2px;
+}
